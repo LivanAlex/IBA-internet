@@ -1,0 +1,47 @@
+
+body{
+  background-color: #e7e7e7;
+  margin: 0 20px;
+  display: flex;
+}
+a:visited{
+  color: #478db8;
+}
+h1{
+  text-align: center;
+}
+table{
+  border-collapse: collapse;
+  width: 80%;
+  border: 2px solid grey;
+}
+td, tr{
+  border: 1px solid grey;
+}
+
+.price{
+  text-align: right;
+}
+.sale{
+  text-align: center;
+}
+.whiteBGBold{
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+.type{
+  font-style: italic;
+}
+caption{
+text-decoration: underline
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.main_content{
+  width: 100%;
+}
+

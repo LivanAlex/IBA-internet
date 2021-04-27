@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task33</title>
+    <style>
+        body {
+            background-color: #d6f6e7;
+        }
+
+        h1 {
+            font-size: 16px;
+            text-align: center;
+            color: #6e7fea;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        tr > td {
+            border: 2px solid #d2c6b0;
+        }
+
+        td {
+            width: 40%;
+            height: 140px;
+            background-image: url("img/brick.jpg");
+            background-size: 100px;
+        }
+
+        td.mine {
+            width: 20%;
+            vertical-align: top;
+        }
+
+        .elevator {
+            display: block;
+            animation-name: elevator;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes elevator {
+            0% {
+                margin-top: 0;
+            }
+            50% {
+                margin-top: 288px; /* 288px = 140 + 140 + 8 (две высоты самого лифта и толщина обводки ячеек) */
+            }
+            100% {
+                margin-top: 0;
+            }
+        }
+
+        .window {
+            background-color: #999999;
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Это дом</h1>
+<table>
+    <tr>
+        <td><img class="window" src="img/window.png" height="69" width="60"/></td>
+        <td class="mine" rowspan="3"><img class="elevator" src="img/elevator.jpg" height="140" width="140"/></td>
+        <td><img class="window" src="img/window.png" height="69" width="60"/></td>
+    </tr>
+    <tr>
+        <td><img class="window" src="img/window.png" height="69" width="60"/></td>
+        <td><img class="window" src="img/window.png" height="69" width="60"/></td>
+    </tr>
+    <tr>
+        <td><img class="window" src="img/window.png" height="69" width="60"/></td>
+        <td><img class="window" src="img/window.png" height="69" width="60"/></td>
+    </tr>
+</table>
+</body>
+</html>

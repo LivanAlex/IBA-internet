@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+    <style>
+        body {
+            width: 280px;
+            margin: 0 auto;
+            background-color: #f795c6;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #7d1003;
+            line-height: 0px;
+            margin-top: 40px;
+        }
+
+        form {
+
+            position: relative;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 10px;
+
+        }
+
+        .name div {
+            margin-bottom: 5px;
+            margin-left: -10px;
+        }
+
+        .name span {
+            margin-left: 20px;
+        }
+
+        button {
+            position: absolute;
+            right: 0px;
+            border-radius: 10px;
+            background-color: #bbbbbb;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            padding: 8px 40px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="#">
+    <h1>Анкета абитуриента</h1>
+    <div class="name">
+        <div>
+            <input type="text" name="lastname" tabindex="1"> <span>- Фамилия</span>
+        </div>
+        <div>
+            <input type="text" name="firstname" tabindex="2"> <span>- Имя</span>
+        </div>
+        <div>
+            <input type="text" name="middlename" tabindex="3"> <span>- Отчество</span>
+        </div>
+    </div>
+
+
+    <div>
+        <span class="bold">Пол:</span>
+        <sapn>M</sapn>
+        <input type="radio" name="gender" value="male" tabindex="4">
+        <sapn>Ж</sapn>
+        <input type="radio" name="gender" value="female" tabindex="5">
+    </div>
+    <div>
+        <span class="bold">Знание иностранного языка</span>
+        <ul>
+            <li>
+                <input type="checkbox" name="language" value="english" tabindex="6">
+                <span>Английский</span>
+            </li>
+            <li>
+                <input type="checkbox" name="language" value="german" tabindex="7">
+                <span>Немецкий</span>
+            </li>
+            <li>
+                <input type="checkbox" name="language" value="franch" tabindex="8">
+                <span>Французский</span>
+            </li>
+        </ul>
+    </div>
+    <div class="button">
+        <button type="submit" tabindex="9">Отправить</button>
+    </div>
+</form>
+</body>
+</html>

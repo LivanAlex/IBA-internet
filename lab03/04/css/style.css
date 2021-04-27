@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background-color: #f973f4;
+}
+h1{
+    color: #971504;
+}
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+h2{
+    font-family: "Comic Sans MS";
+    color: #0e1ea9;
+}
+img{
+    border-top: 7px dotted yellow;
+    border-right: 7px dotted green;
+    border-bottom: 7px dotted #f92907;
+    border-left: 7px dotted #061265;
+}
+
+table{
+    border: 10px double #981730;
+    background-color: #f973f4;
+    border-spacing: 2px;
+margin: 0 auto;
+}
+th{
+    background-color: #c8951a;
+    color: blue;
+    border: 3px dashed #981730;
+    -ms-text-align-last: right;
+
+}
+td{
+    background-color: #c8951a;
+    border: 3px solid #981730;
+    text-align: left;
+}

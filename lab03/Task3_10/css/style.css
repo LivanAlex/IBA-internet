@@ -1,0 +1,39 @@
+h2 {
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fd77af;
+    text-align: center;
+
+}
+
+.line {
+    max-width: 500px;
+    border-top: 2px solid #e0e0e0;
+    margin: 0 auto;
+}
+
+p, ol{
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    color: #707070;
+}
+
+h1 {
+    font-family: Calibri;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.poem{
+    font-family: Calibri;
+    font-style: italic;
+}
+
+.italic{
+    font-style: italic;
+}
+.up{
+    vertical-align: super;
+    font-size: 12px;
+}

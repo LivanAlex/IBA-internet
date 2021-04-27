@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03</title>
+    <style>
+        h1 {
+            font-size: 22px;
+            text-align: center;
+            color: #0a7e14;
+            line-height: 0;
+            margin-top: 30px;
+        }
+
+        body {
+            background-color: #c6f5c6;
+            width: 380px;
+            margin: 0 auto;
+        }
+
+        .userdata {
+            display: flex;
+        }
+
+        h2 {
+            font-size: 16px;
+            text-align: center;
+            color: #1921f4;
+            line-height: 0;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            text-align: center;
+            color: #1921f4;
+            line-height: 0;
+            margin-top: 30px;
+        }
+
+
+        button {
+            padding: 7px 20px;
+            border-radius: 10px;
+            background-color: #bbbbbb;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .send {
+            padding: 7px 40px;
+        }
+
+        .buttons {
+            margin: 10px 0 0 20px;
+        }
+
+        .tablet {
+            margin: -20px -15px -40px;
+        }
+
+        .userdata input {
+            width: 100px;
+            margin: 0 20px 8px 0;
+        }
+
+        .userdata {
+            position: relative;
+        }
+
+        .vertical {
+            position: absolute;
+            top: 50%;
+            margin-top: -24px;
+            margin-left: 140px;
+        }
+
+        .money{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<form action="#">
+    <h1>
+        Бланк заказа
+    </h1>
+    <div class="userdata">
+        <div>
+            <img class="tablet" src="img/Tablet.png" height="170" width="170"/>
+        </div>
+        <div class="vertical">
+            <div><input tabindex="1" type="text" name="lastname"><span>-Фамилия</span></div>
+            <div><input tabindex="2" type="text" name="address"><span>-Адрес</span></div>
+            <div><input tabindex="3" type="tel" name="phone"><span>-Телефон</span></div>
+        </div>
+    </div>
+
+    <h2>
+        Наши товары
+    </h2>
+    <div>
+            <input tabindex="4" type="checkbox" name="mouse" value="yes"/>
+            <img src="img/mouse1.png" height="100" width="100"/>
+
+            <input tabindex="5" type="checkbox" name="mouse2" value="yes"/>
+            <img src="img/mouse2.png" height="100" width="100"/>
+
+            <input tabindex="6" type="checkbox" name="touchpad" value="yes"/>
+            <img src="img/touchpad.png" height="100" width="100"/>
+    </div>
+    <h3>
+        Сумма, который вы располагаете
+    </h3>
+    <div class="money">
+            <input type="radio" name="money" value="100" tabindex="7">
+            <span>$100</span>
+            <input type="radio" name="money" value="500" tabindex="8">
+            <span>$500</span>
+            <input type="radio" name="money" value="1000" tabindex="9">
+            <span>$1000</span>
+    </div>
+    <div class="buttons">
+        <button class="send" tabindex="10" type="submit">Отправить</button>
+        <button tabindex="11" type="reset">Сброс</button>
+    </div>
+</form>
+
+</body>
+</html>

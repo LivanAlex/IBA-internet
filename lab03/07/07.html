@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07</title>
+    <style>
+        body {
+            font-size: 12pt;
+            color: #000099;
+            text-align: justify;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            background-color: #ffffee;
+            margin: 5px;
+        }
+
+        h1 {
+            font-size: 22pt;
+            color: #990099;
+            text-align: left;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        h2 {
+            font-size: 20pt;
+            color: #009900;
+            text-align: center;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 18pt;
+            color: #ff6600;
+            text-align: right;
+            font-family: Courier, "Courier New", serif;
+        }
+
+        h4 {
+            font-size: 16pt;
+            color: #0066ff;
+            text-align: justify;
+            font-family: Tahoma, sans-serif;
+        }
+
+        h5 {
+            font-size: 20pt;
+            color: #6600ff;
+            text-align: center;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            background-color: #ffffaa;
+        }
+
+        h6 {
+            font-size: 14pt;
+            color: #6600ff;
+            text-align: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: line-through;
+        }
+
+        p {
+            font-size: 10pt;
+            color: black;
+            text-align: justify;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: #ffffee;
+            margin: 2px 80px 0;
+        }
+
+        p.over {
+            text-decoration: overline;
+        }
+
+        .h-description {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: #0d1196;
+            margin: 10px 0 10px 50px;
+            font-size: 11pt;
+        }
+
+        .h-description_courier {
+            font-family: "Courier New", serif;
+        }
+
+
+        li {
+            color: black;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding-left: 10px;
+            line-height: 1.5;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .courier {
+            font-family: "Courier New", serif;
+        }
+
+        .h1-padding-top {
+            padding-top: 50px;
+        }
+
+        .h1-margin-top {
+            margin-top: 50px;
+        }
+
+        .h5-paragraph {
+            font-family: "Courier New", serif;
+            font-size: 11pt;
+            margin-top: 60px;
+            padding: 3px 0 8px;
+        }
+
+        .далее{
+            font-size: 16pt;
+        }
+        
+        .title{
+            text-align: center;
+            background-color: #f6f6a5;
+            color: #6424f4;
+            font-size: 16pt;
+            font-weight: 700;
+            margin-top: 50px;
+        }
+        .title span{
+            background-color: #ffffee;
+        }
+
+        table.table1,
+        .table1 th,
+        .table1 td{
+            border: 1px double black;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+        }
+        .table1 th{
+            background-color: #f7b622;
+            color: black;
+            text-align: center;
+            padding: 5px;
+        }
+        .table1 td{
+            padding: 5px;
+            background-color: #fff;
+        }
+        table.table1{
+            width: 600px;
+            margin: 10px auto;
+        }
+
+        table.table2,
+        .table2 th,
+        .table2 td{
+            border-collapse: collapse;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: center;
+            color: black;
+
+        }
+        .table2 th{
+            background-color: #f7b622;
+        }
+        .table2 tr:nth-child(even){
+            background-color: #fff;
+        }
+        .table2 tr:nth-child(odd){
+            background-color: #f6f6a5;
+        }
+        table.table2{
+            width: 450px;
+            margin: 10px auto;
+        }
+        .subtitle{
+            display: block;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            color: #079519;
+            text-align: center;
+            margin: 30px 0;
+        }
+        dl>dt{
+            color: #08650f;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        dl>dd{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: black;
+            padding-left: 20px;
+        }
+        ol{
+            margin-top: 30px;
+        }
+        li{
+            line-height: 1.2;
+        }
+        .arial{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: black;
+            display: block;
+            line-height: 2;
+        }
+        .link1{
+            text-decoration: none;
+            color: #165ba9;
+            background-color: #c6c6c6;
+        }
+        .link2:hover{
+            color: #a99a16;
+        }
+        .color{
+            color: #165ba9;
+            padding-bottom: 400px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="italic">Отформатируйте страницу, используя следующие стили:</h1>
+<h5 class="h1-padding-top">Форматирование тела документа</h5>
+<span class="bold">Тело документа <span class="courier">&#060body&#062:</span></span> размер шрифта - <span
+        class="courier">12 pt</span>, цвет: <span class="courier">#000099</span>, выравнивание: по ширине, тип шрифта -
+Times New Roman, цвет фона: <span class="courier">#ffffee</span>, отступы слева, справа, сверху, снизу - по 5 пикселей
+<h5 class="h1-margin-top">Форматирование заголовков</h5>
+
+<h1>Заголовок 1 уровня</h1>
+<span class="h-description">Для форматирования заголовка 1 уровня задайте следующие стили:</span>
+<ul>
+    <li>размер шрифта - <span class="courier">22 pt</span>,</li>
+    <li>цвет: <span class="courier">#990099</span>,</li>
+    <li>выравнивание: по левому краю,</li>
+    <li>тип шрифта - Arial</li>
+</ul>
+
+<h2>Заголовок 2 уровня</h2>
+<span class="h-description">Для форматирования заголовка 2 уровня задайте следующие стили:</span>
+<ul>
+    <li>размер шрифта - <span class="courier">20 pt</span>,</li>
+    <li>цвет: <span class="courier">#009900</span>,</li>
+    <li>выравнивание: по центру,</li>
+    <li>тип шрифта - Times New Roman</li>
+</ul>
+
+<h3>Заголовок 3 уровня</h3>
+<span class="h-description">Для форматирования заголовка 3 уровня задайте следующие стили:</span>
+<ul>
+    <li>размер шрифта - <span class="courier">18 pt</span>,</li>
+    <li>цвет: <span class="courier">#ff6600</span>,</li>
+    <li>выравнивание: по правому краю,</li>
+    <li>тип шрифта - Courier</li>
+</ul>
+
+<h4>Заголовок 4 уровня</h4>
+<span class="h-description">Для форматирования заголовка 4 уровня задайте следующие стили:</span>
+<ul>
+    <li>размер шрифта - <span class="courier">16 pt</span>,</li>
+    <li>цвет: <span class="courier">#0066ff</span>,</li>
+    <li>выравнивание: по ширине,</li>
+    <li>тип шрифта - Tahoma</li>
+</ul>
+
+<h5>Заголовок 5 уровня</h5>
+<span class="h-description">Для форматирования заголовка 5 уровня задайте следующие стили:</span>
+<ul>
+    <li>размер шрифта - <span class="courier">20 pt</span>,</li>
+    <li>цвет: <span class="courier">#6600ff</span>,</li>
+    <li>выравнивание: по центру,</li>
+    <li>тип шрифта - Times New Roman</li>
+    <li>цвет фона: <span class="courier">#ffffaa</span></li>
+</ul>
+
+<h6>Заголовок 6 уровня</h6>
+<span class="h-description h-description_courier">Для форматирования заголовка 6 уровня задайте следующие стили:</span>
+<ul>
+    <li>размер шрифта - <span class="courier">14 pt</span>,</li>
+    <li>цвет: <span class="courier">#6600ff</span>,</li>
+    <li>выравнивание: по центру,</li>
+    <li>тип шрифта - Arial</li>
+    <li>украшение текста: Зачеркнутый (line-through)</li>
+</ul>
+
+<h5 class="h5-paragraph">Форматирование параграфов</h5>
+<p>Параграф <span class="courier">&#060p&#062</span>: размер шрита - <span class="courier">10 pt</span>, цвет: <span class="courier">#000000</span>,
+    выравнивание: по ширине, тип шрифта - Arial, цвет фона: <span class="courier">#ffffee</span>, отступы
+    слева, справа - по 80 пикселей, отступы между абзацами - сверху 2 пикселя, снизу - 0 пикселей.</p>
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+    eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam
+    voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+    voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci
+    velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut
+    enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+    consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+    consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+    eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam
+    voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+    voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci
+    velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut
+    enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+    consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+    consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+
+<p class="over">Параграфы с классами <span class="courier">&#060p class="over"&#062</span>: Используются все те же стили, что и для предыдущего
+    пункта, кроме того украшение текста - с приподнятой линией (<span class="courier">overline</span>)</p>
+
+<p class="over">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+    eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam
+    voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+    voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci
+    velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut
+    enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+    consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+    consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+
+<p class="over">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+    eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam
+    voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+    voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci
+    velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut
+    enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+    consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae
+    consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+</p>
+
+<h1 class="далее">Далее отформатируйте все элементы самостоятельно</h1>
+
+<div class="title">
+    <span>Форматирование таблиц</span>
+</div>
+
+<table class="table1">
+    <tr>
+    <th>Заголовок таблицы 1</th>
+    <th>Заголовок таблицы 2</th>
+    <th>Заголовок таблицы 2</th>
+    <th>Заголовок таблицы 2</th>
+    </tr>
+    <tr>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+    </tr>
+    <tr>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+        <td>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem</td>
+    </tr>
+</table>
+
+<span class="subtitle">Цены на процессоры</span>
+
+
+<table class="table2">
+    <tr>
+        <th>Процессор</th>
+        <th>Производитель</th>
+        <th>Стоимость</th>
+
+    </tr>
+    <tr>
+        <td>Pentium IV</td>
+        <td>Intell®</td>
+        <td>200 €</td>
+    </tr>
+    <tr>
+        <td>Pentium III</td>
+        <td>Intell®</td>
+        <td>100 €</td>
+    </tr>
+    <tr>
+        <td>Celeron 2400</td>
+        <td>Intell®</td>
+        <td>150 €</td>
+    </tr>
+    <tr>
+        <td>Celeron 1800</td>
+        <td>Intell®</td>
+        <td>70 €</td>
+    </tr>
+    <tr>
+        <td>Athlon 2400</td>
+        <td>AMD®</td>
+        <td>150 €</td>
+    </tr>
+    <tr>
+        <td>Duron</td>
+        <td>AMD®</td>
+        <td>50 €</td>
+    </tr>
+</table>
+
+
+<div class="title">
+    <span>Форматирование списков</span>
+</div>
+
+<span class="subtitle">Списки определений</span>
+
+<dl>
+    <dt>Хлеб</dt>
+    <dd>- пища, приготовленная из отборного зерна</dd>
+    <dt>Вода</dt>
+    <dd>- жидкость без цвета и запаха</dd>
+    <dt>Пиво</dt>
+    <dd>- напиток из хлеба и воды</dd>
+</dl>
+
+<span class="subtitle">Списки нумерованные</span>
+
+
+<span class="h-description">Типы операционных систем</span>
+
+<ol>
+    <li>MS DOS</li>
+    <li>Windows</li>
+    <li>Linux</li>
+    <li>UNIX</li>
+    <li>MacOS</li>
+    <li>Free BSD</li>
+</ol>
+
+
+<div class="title">
+    <span>Форматирование ссылок</span>
+</div>
+<span class="arial">Ссылка без подчёркивания: <a class="link1" href="#">&nbsphttp://www.google.ru</a></span>
+    <span class="arial">
+    Цвета ссылок: <a class="link2" href="#">http://www.google.ru</a> <span class="color">(МЕНЯЕТСЯ ЦВЕТ ПРИ НАВЕДЕНИИ
+    КУРСОРА) </br>
+    )</span>
+</span>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04</title>
+    <style>
+
+        body{
+            width: 400px;
+            margin: 0 auto;
+            background-color: #e3e3e3;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: #2d2d2d;
+        }
+
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: normal;
+            color: #999999;
+        }
+        span{
+            color: black;
+        }
+        button {
+            background-color: #555555;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 200;
+            border: 2px solid #555555;
+            border-radius: 3px;
+        }
+
+        button {
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #555555;
+            border: 2px solid #555555;
+        }
+
+        .programs{
+            margin: 10px 0;
+        }
+
+        .inputfield{
+            display: block;
+            width: 100%;
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Бланк заказа</h1>
+<form action="#">
+    <div class="programs">
+        <div><input tabindex="1" type="checkbox" value="100"> Windows - 100 руб</div>
+        <div><input tabindex="2" type="checkbox" value="30"> Антивирус Касперского - 30 руб
+        </div>
+        <div><input tabindex="3" type="checkbox" value="0"> Linux - 0 руб
+        </div>
+        <div><input tabindex="4" type="checkbox" value="130"> 1C Бухгалтенрия - 130 руб
+        </div>
+        <div><input tabindex="5" type="checkbox" value="1000"> Cubase - 1000 руб
+        </div>
+    </div>
+    <span>Адрес доставки:</span>
+    <div>
+        <input class="inputfield" tabindex="6" type="text" name="address">
+    </div>
+    <span>Мнение о сайте:</span>
+    <div>
+        <select class="inputfield" tabindex="7" name="rating" id="1">
+            <option value="1">отлично</option>
+            <option value="2">хорошо</option>
+            <option value="3">посредственно</option>
+            <option value="4">плохо</option>
+            <option value="5">очень плохо</option>
+        </select>
+    </div>
+    <span>Пожелания:</span>
+    <div>
+        <textarea class="inputfield" tabindex="8" name="wishes" id="2" rows="4"
+                  placeholder=" напишите как сильно вы нас любите"></textarea>
+    </div>
+    <div class="buttons">
+        <button tabindex="9" type="submit">Заказать</button>
+        <button tabindex="10" type="reset">Очистить</button>
+    </div>
+</form>
+</body>
+</html>

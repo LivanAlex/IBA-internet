@@ -1,0 +1,19 @@
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+}
+a{
+    color: #a6c8e2;
+    transition: 200ms;
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    color: #ffffff;
+    transition: 200ms;
+}
+
+
+ul{
+   list-style: none;
+}

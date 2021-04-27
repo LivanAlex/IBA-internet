@@ -1,0 +1,17 @@
+p{
+    font-size: 14px;
+    font-family: Monotype Corsiva, serif;
+}
+
+h1{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    border: 10px solid blue;    
+}

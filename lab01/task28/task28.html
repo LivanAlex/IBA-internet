@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task28</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 200px;
+            text-align: center;
+            background-color: #f6f695;
+        }
+
+        .city-type-A {
+            list-style-type: upper-latin;
+        }
+
+        .city-type-I {
+            list-style-type: upper-roman;
+        }
+
+        .city-type-a {
+            list-style-type: lower-latin;
+        }
+
+        .city-type-1{
+            list-style-type: decimal;
+        }
+
+        .city-type-i {
+            list-style-type: lower-roman;
+        }
+
+        .city-type-dot {
+            list-style-type: disc;
+        }
+
+        .region {
+            list-style-type: none;
+            color: #02235e;
+            font-weight: bold;
+        }
+
+        ul > li > ul > li {
+            color: #000000;
+            font-weight: normal;
+            text-align: left;
+        }
+        ul{
+            line-height: 2;
+        }
+
+        h1{
+            font-size: 16px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Города Беларуси</h1>
+
+
+<ul class="region">
+    <li>Витебская область
+        <ul class="city-type-A">
+            <li>Витебск</li>
+            <li>Полоцк</li>
+        </ul>
+    </li>
+    <li>Минская область
+        <ul class="city-type-I">
+            <li>Минск</li>
+            <li>Борисов</li>
+        </ul>
+    </li>
+    <li>Гродненская область
+        <ul class="city-type-a">
+            <li>Гродно</li>
+            <li>Лида</li>
+        </ul>
+    </li>
+    <li>Могилевская область
+        <ul class="city-type-1">
+            <li>Могилев</li>
+            <li>Горки</li>
+        </ul>
+    </li>
+    <li>Брестская обоасть
+        <ul class="city-type-i">
+            <li>Брест</li>
+            <li>Пинск</li>
+        </ul>
+    </li>
+    <li>Гомельская область
+        <ul class="city-type-dot">
+            <li>Гомель</li>
+            <li>Мозырь</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>

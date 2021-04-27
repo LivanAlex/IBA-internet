@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06</title>
+    <style>
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        body{
+            background-color: #f8c626;
+            width: 250px;
+            margin: 0 auto;
+        }
+        
+        div {
+            margin: 0 0 7px 0;
+            vertical-align: center;
+        }
+        
+        h1{
+            color: #7d1003;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        input {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 130px;
+            height: 25px;
+        }
+        span{
+            margin-left: 15px;
+        }
+
+
+        button{
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #bbbbbb;
+            margin-right: 7px;
+        }
+
+        .clear{
+            margin: 10px 0 0 30px;
+            width: 90px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="#">
+    <h1>Калькулятор</h1>
+    <div><input name="first" type="number" > <span>-Первое число</span></div>
+    <div><input name="second" type="number" > <span>-Второе число</span></div>
+    <div><input name="result" type="text"> <span>-Результат</span></div>
+    <button type="button" onclick="result.value = parseFloat(first.value) + parseFloat(second.value)">+</button>
+    <button type="button" onclick="result.value = parseFloat(first.value) - parseFloat(second.value)">-</button>
+    <button type="button" onclick="result.value = parseFloat(first.value) * parseFloat(second.value)">*</button>
+    <button type="button" onclick="result.value = parseFloat(first.value) / parseFloat(second.value)">/</button>
+    <div>
+        <button class="clear" type="reset">Очистить</button>
+    </div>
+
+</form>
+</body>
+</html>

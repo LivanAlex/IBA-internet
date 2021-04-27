@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+
+function fun1() {
+ //функция для первой кнопки
+    let out = "";
+    for(let i = 1; i<=10; i++){
+        out += `${i}</br>`;
+    }
+    document.getElementById("output").innerHTML = out;
+}
+function fun2() {
+  //функция для второй кнопки
+    let out = "";
+    for(let i = 100; i>=0; i-=10){
+        out += `${i}</br>`;
+    }
+    document.getElementById("output").innerHTML = out;
+}
+function fun3() {
+  //функция для третьей кнопки
+    let out = "";
+    for(let i = 40; i>=0; i-=5){
+        if(i == 25){
+            continue;
+        }
+        out += `${i}</br>`;
+    }
+    document.getElementById("output").innerHTML = out;
+}
+</script>
+</head>
+<body>
+<p>Исправьте ошибки в коде так, чтобы после нажатия на каждую из кнопок ниже выполнялась соответствующая функция. </p>
+<input type='button' value='Вывести числа от 1 до 10' onclick="fun1()"/>
+<input type='button' value='Вывести числа от 100 до 0 с шагом 10' onclick="fun2()"/>
+<input type='button' value='Вывести числа от 40 до 0 с шагом 5 пропустив 25' onclick="fun3()"/>
+<p id="output"></p>
+</body>
+</html>

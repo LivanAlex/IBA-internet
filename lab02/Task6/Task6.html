@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Task6</title>
+    <style type="text/css">
+        body{
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+            border: 4px double deeppink;
+        }
+
+        span {
+            display: block;
+            font-family: LilyUPC, serif;
+            color: deeppink;
+            font-size: 50px;
+            margin: 5px 0 20px;
+        }
+        .op{
+            opacity: 0.5
+        }
+        .op:hover {
+            opacity: 1
+        }
+        label {
+            padding: 10px;
+        }
+        .small{
+            font-size: 30px;
+        }
+        button{
+            margin: 60px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="get" name="form_please">
+        <div class="op">
+            <label >
+                <span>NAME OF THE JEDI</span>
+                <input tabindex="1" type="text" name="name" placeholder="enter pls"/>
+            </label>
+        </div>
+        <div class="op">
+            <label>
+                <span>SECOND NAME PLEASE</span>
+                <input tabindex="2" type="text" name="second-name" placeholder="we must know"/>
+            </label>
+        </div>
+        <div class="op">
+            <label>
+                <span>BIRTH OF WARRIOR</span>
+                <input tabindex="3" type="date" name="date" placeholder="дд.мм.гггг"/>
+            </label>
+        </div>
+        <div class="op">
+            <label>
+                <span>GENDER</span>
+                <span class="small">
+                    <input tabindex="4" type="radio" name="gender"/> m
+                    <input tabindex="4" type="radio" name="gender"/> w
+                    <input tabindex="4" type="radio" name="gender"/> I don't know
+                </span>
+            </label>
+        </div>
+        <div class="op">
+            <label>
+                <span>WARLIKE NAME</span>
+                <input tabindex="5" type="text" name="warlike-name" placeholder="login of cause"/> <br/>
+            </label>
+        </div>
+        <div class="op">
+            <label>
+                <span>SECRET CODE</span>
+                <input tabindex="6" type="password" name="password" placeholder="password"/> <br/>
+            </label>
+        </div>
+        <div class="op">
+            <button tabindex="7" type="submit" onclick="confirm('FORCE WILL COME WITH TOU!!!')">
+                TO BATTLE!!!
+            </button>
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            display: block;
+        }
+
+        .frame {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+        }
+
+        .framebox {
+            display: flex;
+            height: 200px;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<iframe class="header" src="1.htm"></iframe>
+<div class="framebox">
+    <iframe class="frame" src="2.htm"></iframe>
+    <iframe class="frame" src="3.htm"></iframe>
+</div>
+
+</body>
+</html>

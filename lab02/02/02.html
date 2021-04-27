@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02</title>
+    <style>
+        body{
+            width: 360px;
+            margin: 0 auto;
+            background-color: #c7f6f7;
+        }
+        h1{
+            font-size: 22px;
+            text-align: center;
+            color: #0a0d7d;
+            line-height: 0;
+            margin-top: 30px;
+        }
+        h2{
+            font-size: 16px;
+            line-height: normal;
+            margin: 10px 0 0 10px ;
+        }
+
+        .name span{
+            padding-left: 20px;
+        }
+        .name div{
+            margin-bottom: 5px;
+        }
+        button{
+            padding: 7px 20px;
+            border-radius: 10px;
+            background-color: #bbbbbb;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .send{
+            padding: 7px 40px;
+        }
+        .buttons{
+            margin: 10px 0 0 20px;
+        }
+        select{
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="#">
+    <h1>Гостевая книга</h1>
+    <div class="name">
+        <div>
+            <input tabindex="1" type="text" name="lastname"> <span>-Фамилия</span>
+        </div>
+        <div>
+            <input tabindex="2" type="text" name="firstname"> <span>-Имя</span>
+        </div>
+    </div>
+
+    <div class="wishes">
+        <h2>Ваши пожелания по работе фирмы:</h2>
+        <textarea tabindex="3" name="wishes" id="1" cols="40" rows="4" placeholder="Введите здесь свое сообщение"></textarea>
+    </div>
+
+    <div>
+        <h2>Укажите товары, наиболее вам понравившиеся:</h2>
+        <select tabindex="4" name="goods">
+            <option value="Printers">Принтеры</option>
+            <option value="Scanners">Сканнеры</option>
+        </select>
+    </div>
+
+    <div class="buttons">
+        <button class="send" tabindex="5" type="submit">Отправить</button>
+        <button tabindex="6" type="reset">Сброс</button>
+    </div>
+
+
+
+
+
+</form>
+</body>
+</html>

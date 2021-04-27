@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="secreet.js"></script>
+    <script>
+        function win() {
+            let userInput = prompt("Введите пароль:","1234");
+            if(userInput === secretPassword){
+                alert("You are welcome!")
+                document.getElementById("message").innerHTML = "Дратути";
+            } else {
+                alert("Password incorrect! enjoy reading news")
+                window.location.href = 'https://tut.by';
+            }
+        }
+    </script>
+</head>
+<body onload='win()'>
+<b id="message"></b>
+</body>
+</html>
+
+
+

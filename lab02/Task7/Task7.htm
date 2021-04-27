@@ -1,0 +1,213 @@
+﻿<html>
+<head>
+    <title>Домашняя работа</title>
+</head>
+<style>
+    body {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        background-color: #f7c4f6;
+    }
+
+    .intro {
+        position: absolute;
+        padding-left: 170px;
+        left: 60px;
+        background-color: #f7c4f6;
+        font-size: 14px;
+    }
+
+    .void {
+        height: 70px;
+    }
+
+    form {
+        width: 600px;
+        background-color: #f7c4f6;
+        border: 1px solid black;
+        margin-left: 30px;
+        padding: 60px 16px 30px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ol {
+        padding-left: 0;
+    }
+
+    ol > li {
+        padding-bottom: 20px;
+        list-style-position: inside;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .buttons {
+        margin-top: 30px;
+    }
+
+
+</style>
+<body>
+<p class="intro">
+    Шановний учаснику конкурсу «Вчитель-новатор»!</br>
+    Заповніть, будь ласка, реєстраційну анкету українською мовою.</br>
+    Прохання надати повну відповідь на всі поставлені запитання.</br>
+    Якщо ви подаєте декілька конкурсних робіт, будь ласка,</br>
+    заповніть дану анкету для кожної конкурсної роботи окремо.</br>
+    Дякуємо Вам за участь у конкурсі та бажаємо успіхів!
+</p>
+<div class="void"></div>
+<form action="#">
+    <ol>
+        <li>Прізвище <input name="name" type="text"></li>
+        <li>Ім’я та по-батькові <input name="middle name" type="text"></li>
+        <li>Назва конкурсної роботи <input name="work name" type="text"></li>
+        <li>
+            Номінація конкурсної роботи (список для вибору)
+            <ul>
+                <li><input name="nomination" value="Навчальний проект" type="radio">Навчальний проект</li>
+                <li><input name="nomination" value="Виховний проект" type="radio">Виховний проект</li>
+                <li><input name="nomination" value="Позашкільний проект" type="radio">Позашкільний проект</li>
+                <li><input name="nomination" value="Навчальний контент" type="radio">Навчальний контент</li>
+                <li><input name="nomination" value="Он-лайновий освітній ресурс" type="radio">Он-лайновий освітній
+                    ресурс
+                </li>
+                <li><input name="nomination" value="Навчально-методичне забезпечення" type="radio">Навчально-методичне
+                    забезпечення
+                </li>
+            </ul>
+        </li>
+        <li>Навчальна дисципліна <input name="discipline" type="text" placeholder="наприклад, біологія"></li>
+        <li>Чи була апробована ваша робота?
+            <div>
+                так<input name="tested" value="yes" type="radio">нi<input name="tested" value="no" type="radio">
+            </div>
+        </li>
+        <li>Якщо так, то на якому рівні? <input name="level" id="level" type="text" disabled="disabled"></li>
+        <li>Повна назва установи, де ви працюєте <input name="workplace" type="text"></li>
+        <li>Ваша посада <input name="post" type="text"></li>
+        <li>Місто/населений пункт <input name="city" type="text"></li>
+        <li>Область
+            <select name="region" id="">
+                <option value="1">Вінницька область</option>
+                <option value="2">Волинська область</option>
+                <option value="3">Дніпропетровська область</option>
+                <option value="4">Донецька область</option>
+                <option value="5">Житомирська область</option>
+                <option value="6">Закарпатська область</option>
+                <option value="7">Запорізька область</option>
+                <option value="8">Івано-Франківська область</option>
+                <option value="9">Київська область</option>
+                <option value="10">Кіровоградська область</option>
+                <option value="11">Луганська область</option>
+                <option value="12">Львівська область</option>
+                <option value="13">Миколаївська область</option>
+                <option value="14">Одеська область</option>
+                <option value="15">Полтавська область</option>
+                <option value="16">Рівненська область</option>
+                <option value="17">Сумська область</option>
+                <option value="18">Тернопільська область</option>
+                <option value="19">Харківська область</option>
+                <option value="20">Херсонська область</option>
+                <option value="21">Хмельницька область</option>
+                <option value="22">Черкаська область</option>
+                <option value="23">Чернігівська область</option>
+                <option value="24">Чернівецька область</option>
+                <option value="25">Київ</option>
+                <option value="26">Севастополь</option>
+                <option value="27">Автономна Республіка Крим</option>
+            </select></li>
+        <li>Мобільний телефон <input type="tel"></li>
+        <li>Електронна пошта <input type="email"></li>
+        <li>
+            Ви брали участь у попередніх конкурсах «Вчитель-новатор»?
+            <div>
+                так<input name="first-time" value="yes" type="radio">нi<input name="first-time" value="no" type="radio">
+            </div>
+        </li>
+        <li>Якщо так, то вкажіть, коли саме. <input id="koliSame" type="text" disabled="disabled"></li>
+        <li>
+            Яким чином ви дізналися про конкурс «Вчитель-новатор»?
+            <ul>
+                <li><input type="checkbox" value="1" name="source">Сайт МОН молодьспорту</li>
+                <li><input type="checkbox" value="2" name="source">Сайт Майкрософт Україна</li>
+                <li><input type="checkbox" value="3" name="source">Сайт Мережі «Партнерство в навчанні»</li>
+                <li><input type="checkbox" value="4" name="source">Обласний ІППО</li>
+                <li><input type="checkbox" value="5" name="source">Обласне управління освіти</li>
+                <li><input type="checkbox" value="6" name="source">Міське управління освіти</li>
+                <li><input type="checkbox" value="7" name="source">Osvita.com</li>
+                <li><input type="checkbox" value="8" name="source">Gurt.org.ua</li>
+                <li>інше <input name="group1" type="text"></li>
+            </ul>
+        </li>
+    </ol>
+    <span>Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності (галочка обязательна)
+        <input type="checkbox" id="accept"></span>
+    <div class="buttons">
+        <button type="submit" disabled="disabled">Подати анкету</button>
+        <button type="reset">Заповнити знову</button>
+    </div>
+</form>
+
+<script>
+
+    if (document.querySelector('input[name=tested]')) {
+        document.querySelectorAll('input[name=tested]').forEach((elem) => {
+            elem.addEventListener("change", function (event) {
+                let item = event.target.value;
+                const level = document.getElementById('level');
+                if (item === "yes") {
+                    level.disabled = false;
+                } else if (item === "no") {
+                    level.disabled = true;
+                    level.value = "";
+                }
+            });
+        });
+    }
+
+    if (document.querySelector('input[name=first-time]')) {
+        document.querySelectorAll('input[name=first-time]').forEach((elem) => {
+            elem.addEventListener("change", function (event) {
+                let item = event.target.value;
+                const level = document.getElementById('koliSame');
+                if (item === "yes") {
+                    level.disabled = false;
+                } else if (item === "no") {
+                    level.disabled = true;
+                    level.value = "";
+                }
+            });
+        });
+    }
+
+    const inputs = document.querySelectorAll('input[id=accept]');
+    const button = document.querySelector('button');
+
+    function check() {
+        button.disabled = true;
+        inputs.forEach(input => {
+            if (input.checked) button.disabled = false
+        });
+    }
+
+    inputs.forEach(input => input.addEventListener('change', check));
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        .flex{
+            display: flex;
+        }
+        .flex p{
+            text-align: center;
+        }
+        .flex div{
+            width: 220px;
+            height: 225px;
+            border: 1px solid #888888;
+            margin-right: 10px;
+        }
+        .flex img{
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+        }
+        .flex button{
+            display: block;
+            width: 90%;
+            font-size: 16px;
+            margin: 8px auto;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS установить скрытие и открытие блока JS</h1>
+<p><span class="bold">visibility:hidden</span> скрытие элемента из документа. Он занимает место в макете</p>
+<p><span class="bold">display:none</span> скрытие элемента из документа. Он не занимает никакого места</p>
+<div class="flex">
+    <div id="first">
+        <p>Бокс 1</p>
+        <img src="img_fjords.jpg" alt="1">
+        <button onclick=none()>Снять</button>
+    </div>
+    <div id="second">
+        <p>Бокс 2</p>
+        <img src="img_lights.jpg" alt="2">
+        <button onclick=visib()>Скрыть</button>
+    </div>
+    <div>
+        <p>Бокс 3</p>
+        <img src="img_forest.jpg" alt="3">
+        <button onclick=showAll()>Открыть</button>
+    </div>
+</div>
+<script>
+    function none(){
+        document.getElementById("first").style.display = "none";
+    }
+    function visib(){
+        document.getElementById("second").style.visibility = "hidden";
+    }
+    function showAll(){
+        document.getElementById("first").style.display = "block";
+        document.getElementById("second").style.visibility = "visible";
+    }
+</script>
+</body>
+</html>

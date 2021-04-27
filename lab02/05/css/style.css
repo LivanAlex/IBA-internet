@@ -1,0 +1,30 @@
+body{
+    background-color: #efefbf;
+    max-width: 400px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+.name{
+    width: 100px;
+}
+.address{
+    width: 150px;
+}
+.phone{
+    width: 50px;
+}
+div{
+    margin: 0 0 10px 0;
+}
+textarea{
+    display: block;
+    width: 100%;
+}

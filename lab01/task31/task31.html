@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task31</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background: #fff url('img/bay.jpg') 0 0/cover no-repeat;
+        }
+
+        h1 {
+            color: #1b17ba;
+            text-align: center;
+        }
+
+        .angel{
+            position: absolute;
+            animation-name: angel;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes angel {
+            0% {
+                left: -132px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .planet{
+            position: absolute;
+            animation-name: planet;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes planet {
+            0% {
+                bottom: -102px;
+            }
+            100% {
+                bottom: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<h1>Летающий ангел</h1>
+<img class="angel" src="img/angel.png" alt="angel" height="123" width="132">
+Используя возможности HTML-языка можно заставить летать ангела по странице. <br>И не только ангела... <br>
+<img class="planet" src="img/planet.png" alt="Планета" height="102" width="102">
+</body>
+</html>

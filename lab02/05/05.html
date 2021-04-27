@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<img src="img/logo.png" height="100" width="250"/>
+<h1>«Фотостудия «Шарм»»</h1>
+<form action="#">
+    <div>
+        <input class="name" tabindex="1" type="text"> <span>Имя заказчика</span>
+    </div>
+    <div>
+        <input class="address" tabindex="2" type="text"> <span>Адрес</span>
+    </div>
+    <div>
+        <input class="phone" tabindex="3" type="tel"> <span>Телефон</span>
+    </div>
+    <span>Фото:</span>
+    <div>
+        <input tabindex="4" type="checkbox" name="color" value="yes"><span>цветное</span>
+        <input tabindex="5" type="checkbox" name="backandwhite" value="yes"><span>черно-белое</span>
+        <input tabindex="6" type="checkbox" name="colornegative" value="yes"><span>цветной слайд</span>
+    </div>
+    <span>Срок исполнения:</span>
+    <div>
+        <input tabindex="7" type="radio" name="duration" value="3"><span>3 дня</span>
+        <input tabindex="7" type="radio" name="duration" value="10"><span>10 дней</span>
+        <input tabindex="7" type="radio" name="duration" value="30"><span>30 дней</span>
+    </div>
+
+    <div>
+        <span>Заказ принял:</span>
+        <select name="employee" id="1">
+            <option value="ivanov.html">Иванов</option>
+            <option value="petrova.html">Петрова</option>
+            <option value="sidorov.html">Сидоров</option>
+        </select>
+        <button type="button" onclick="openEmployee()">подробнее</button>
+
+    </div>
+    <div>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </div>
+</form>
+<script>
+    function openEmployee(){
+        let select = document.querySelector('select');
+        window.open(select.value);
+    }
+</script>
+</body>
+</html>
