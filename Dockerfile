@@ -1,1 +1,6 @@
-FROM httpd:2.4.48-alpine
+FROM ubuntu:latest
+RUN apt-get -y update
+RUN apt-get -y install nmap apache2
+COPY . /var/www/html
+EXPOSE 80
+CMD apache2ctl -D FOREGROUND
