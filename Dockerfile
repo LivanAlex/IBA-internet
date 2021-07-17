@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:3.14
 RUN apt-get -y update
 RUN apt-get -y install nmap apache2
 COPY . /var/www/html
